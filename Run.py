@@ -55,7 +55,7 @@ def exixting_directory_file(file):
         os.remove(file)
 
 def designprint(samaywrite):
-    print(r+"└─> "+w+"\033[1;37m"+samaywrite)
+    print(f"{r}└─> {w}" + "\033[1;37m" + samaywrite)
 
 def front_design():
     cls_clear_func()
@@ -86,7 +86,9 @@ class Setup:
 
 
 try:
-    user_ezip_unzipping = getpass(r+"└─"+w+"\033[1;37mEnter the password of Zipfile : "+r).strip()
+    user_ezip_unzipping = getpass(
+        f"{r}└─{w}" + "\033[1;37mEnter the password of Zipfile : " + r
+    ).strip()
 except:
     pass
 

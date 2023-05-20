@@ -52,12 +52,12 @@ def backie():
 
 	]
 
-	print(r+"└─"+w+"[!] "+y+random.choice(ritik_welcome))
-	back=input(r+"..└─"+w+"\033[1;37mExit [ y / n ]: "+r)
-	if back=='y' or back=='Y':
-		
+	print(f"{r}└─{w}[!] {y}{random.choice(ritik_welcome)}")
+	back = input(f"{r}..└─{w}" + "\033[1;37mExit [ y / n ]: " + r)
+	if back in ['y', 'Y']:
+
 		sys.exit()
-	if back=='n' or back=='N':
+	if back in ['n', 'N']:
 		backie()
 	else:
 		sys.exit()
@@ -69,14 +69,14 @@ def bye():
 def ip():
 	
 	
-	print(r+"└─"+w+"\033[1;37m[ 1 ] IP Track: ")
-	print(r+"└─"+w+"\033[1;37m[ 2 ] Own IP Track: ")
-	print(r+"└─"+w+"\033[1;37m[ 3 ] Exit : ")
+	print(f"{r}└─{w}" + "\033[1;37m[ 1 ] IP Track: ")
+	print(f"{r}└─{w}" + "\033[1;37m[ 2 ] Own IP Track: ")
+	print(f"{r}└─{w}" + "\033[1;37m[ 3 ] Exit : ")
 
-	opp=int(input(r+"└─"+w+"\033[1;37mEnter Desire Option: "+r))	
+	opp = int(input(f"{r}└─{w}" + "\033[1;37mEnter Desire Option: " + r))
 	if opp==1:
 		os.system("clear")
-		
+
 		os.system("php Vaimip.php")
 	elif opp==2:
 		os.system("php Vaimip2.php")
@@ -84,10 +84,10 @@ def ip():
 
 	elif opp==3:
 		bye()
-    
-            
 
-	
+
+
+
 
 
 	backie()
